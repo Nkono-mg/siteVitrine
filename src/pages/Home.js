@@ -1,9 +1,12 @@
 import React from 'react';
+import Navigation from '../component/Navigation';
+import SocialNetwork from '../component/SocialNetwork';
 
 const Home = () => {
     return (
         <div>
-            <h2>Home page</h2>
+            <Navigation />
+            <SocialNetwork />
         </div>
     );
 };
