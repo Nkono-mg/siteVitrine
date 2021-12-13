@@ -1,13 +1,16 @@
 import React from "react";
 import Navigation from "../component/Navigation";
 import ButtonsBottom from "../component/ButtonsBottom";
+import Logo from "../component/Logo";
+import Project from "../component/Project";
 
 export const Project1 = () => {
   return (
     <main>
       <div className="project">
         <Navigation />
-        <h2>Project1</h2>
+        <Logo />
+        <Project projectNumber = {0}/>
         <ButtonsBottom left={"/"} right={"/projet-2"}/>
       </div>
     </main>
@@ -18,7 +21,8 @@ export const Project2 = () => {
       <main>
         <div className="project">
           <Navigation/>
-          <h2>Project2</h2>
+          <Logo />
+          <Project projectNumber = {1}/>
           <ButtonsBottom left={"/projet-1"} right={"/projet-3"}/>
         </div>
       </main>
@@ -29,7 +33,8 @@ export const Project2 = () => {
       <main>
         <div className="project">
           <Navigation/>
-          <h2>Project3</h2>
+          <Logo />
+          <Project projectNumber = {2}/>
           <ButtonsBottom left={"/projet-2"} right={"/projet-4"}/>
         </div>
       </main>
@@ -40,7 +45,8 @@ export const Project2 = () => {
       <main>
         <div className="project">
           <Navigation/>
-          <h2>Project4</h2>
+          <Logo />
+          <Project projectNumber = {3}/>
           <ButtonsBottom left={"/projet-3"} right={"/contact"} />
         </div>
       </main>
