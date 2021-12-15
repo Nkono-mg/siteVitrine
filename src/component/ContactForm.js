@@ -33,18 +33,20 @@ const ContactForm = () => {
     };
 
     if (name && isEmail() && message) {
-      const templateId = "template_g9f08nd";
+
+      const templateId = "template_g9f08nd"; 
 
       nameS.classList.remove("red");
       emailS.classList.remove("red");
       messageS.classList.remove("red");
-
+      
       sendFeedback(templateId, {
         name,
         company,
         phone,
         email,
         message,
+        
       });
     } else {
       formMess.innerHTML = "Merci de remplir correctement les champs requis *";
@@ -64,13 +66,13 @@ const ContactForm = () => {
   };
 
   const sendFeedback = (templateId, variables) => {
+
     let formMess = document.querySelector(".form-message");
 
     window.emailjs
-      .send("gmail", templateId, variables)
+      .send("service_vyexn1b", templateId, variables)
       .then((res) => {
-        formMess.innerHTML =
-          "Message envoyé ! Nous vous recontacterons dès que possible.";
+        formMess.innerHTML = `Bravo ${name}, nous avons reçu votre mail !`;
         formMess.style.background = "#00c1ec";
         formMess.style.opacity = "1";
 

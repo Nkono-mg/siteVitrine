@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "emailjs": "^3.7.0",
     "emailjs-com": "^2.6.3",
     "framer-motion": "^2.1.4",
     "react": "^16.13.1",

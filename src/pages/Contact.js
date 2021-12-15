@@ -20,7 +20,7 @@ const Contact = () => {
             <div className="content">
               <h4>Adresse</h4>
               <p>Antananarivo</p>
-              <p>Ankadindratombo</p>
+              <p>P44-Sud Ambohipo</p>
             </div>
           </div>
           <div className="phone">
