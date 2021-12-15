@@ -5,6 +5,11 @@ const Project = (props) => {
   const [currentProject] = useState(projectsData);
   const project = currentProject[props.projectNumber];
 
+  //random background circle
+  let left = Math.floor(Math.random() * 200 + 700) + "px";
+  let top = Math.floor(Math.random() * 200 + 200) + "px";
+  let size = "scale(" + (Math.random() + 0.7) + ")";
+
   return (
     <div className="project-main">
       <div className="project-content">
@@ -25,11 +30,20 @@ const Project = (props) => {
           <img src={project.img} alt={project.title} />
         </div>
         <div className="button-container">
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover">
-              <span className="button">Voir le site</span>
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover"
+          >
+            <span className="button">Voir le site</span>
           </a>
         </div>
       </div>
+      <span
+        className="random-circle"
+        style={{ left, top, transform: size }}
+      ></span>
     </div>
   );
 };

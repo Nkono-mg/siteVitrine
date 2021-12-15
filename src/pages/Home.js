@@ -1,12 +1,14 @@
 import React from "react";
 import ButtonsBottom from "../component/ButtonsBottom";
 import DynamicText from "../component/DynamicText";
+import Mouse from "../component/Mouse";
 import Navigation from "../component/Navigation";
 import SocialNetwork from "../component/SocialNetwork";
 
 const Home = () => {
   return (
-    <div>
+    <main>
+      <Mouse />
       <div className="home">
         <Navigation />
         <SocialNetwork />
@@ -18,9 +20,9 @@ const Home = () => {
             </h2>
           </div>
         </div>
-        <ButtonsBottom right={"/projet-1"}  />
+        <ButtonsBottom right={"/projet-1"} />
       </div>
-    </div>
+    </main>
   );
 };
 
